@@ -1,8 +1,10 @@
 diff --git a/recipes-core/images/upboard-image-base.inc b/recipes-core/images/upboard-image-base.inc
-index 8343080..915256d 100644
+index 8343080..61e649a 100644
 --- a/recipes-core/images/upboard-image-base.inc
 +++ b/recipes-core/images/upboard-image-base.inc
-@@ -2,7 +2,7 @@ IMAGE_FEATURES += "package-management"
+@@ -1,8 +1,8 @@
+-IMAGE_FEATURES += "package-management"
++IMAGE_FEATURES += "package-management debug-tweaks "
  
  IMAGE_INSTALL += "kernel-modules"
  IMAGE_INSTALL += "dmidecode"

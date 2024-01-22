@@ -34,10 +34,9 @@ fi
 
 popd
 
-if [ ! -f patches/.upboard-image-base ]; then
-    echo "Patching Up Board build"
-    patch -d sources/meta-up-board/ -p1 < patches/upboard-image-base.patch
-    if [[ $? -eq 0 ]]; then 
-        touch patches/.upboard-image-base
-    fi 
-fi
+echo "Patching Up Board build"
+pushd sources/meta-up-board
+git reset --hard
+popd
+patch -d sources/meta-up-board/ -p1 < patches/upboard-image-base.patch
+
