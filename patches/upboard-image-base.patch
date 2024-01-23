@@ -1,8 +1,8 @@
 diff --git a/recipes-core/images/upboard-image-base.inc b/recipes-core/images/upboard-image-base.inc
-index 8343080..61e649a 100644
+index 8343080..eecb5ca 100644
 --- a/recipes-core/images/upboard-image-base.inc
 +++ b/recipes-core/images/upboard-image-base.inc
-@@ -1,8 +1,8 @@
+@@ -1,12 +1,12 @@
 -IMAGE_FEATURES += "package-management"
 +IMAGE_FEATURES += "package-management debug-tweaks "
  
@@ -13,6 +13,11 @@ index 8343080..61e649a 100644
  IMAGE_INSTALL += "python3"
  IMAGE_INSTALL += "python3-pip"
  IMAGE_INSTALL += "alsa-lib alsa-utils alsa-tools"
+-IMAGE_INSTALL += "dropbear parted"
++IMAGE_INSTALL += "openssh parted"
+ IMAGE_INSTALL += "i2c-tools git vim"
+ IMAGE_INSTALL += "file"
+ IMAGE_INSTALL += "dosfstools"
 @@ -14,5 +14,6 @@ IMAGE_INSTALL += "picocom"
  IMAGE_INSTALL += "connman connman-client"
  
