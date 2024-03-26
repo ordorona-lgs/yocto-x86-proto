@@ -27,6 +27,11 @@ if [ ! -d meta-virtualization ]; then
     git clone -b dunfell git://git.yoctoproject.org/meta-virtualization.git
 fi
 
+if [ ! -d meta-security ]; then
+    echo "Cloning meta-security"
+    git clone -b dunfell git://git.yoctoproject.org/meta-security.git
+fi
+
 if [ ! -d poky ]; then
     echo "Cloning poky"
     git clone -b dunfell git://git.yoctoproject.org/poky.git

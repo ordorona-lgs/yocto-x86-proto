@@ -1,15 +1,14 @@
 diff --git a/recipes-core/images/upboard-image-base.inc b/recipes-core/images/upboard-image-base.inc
-index 8343080..eecb5ca 100644
+index 8343080..c9b14c3 100644
 --- a/recipes-core/images/upboard-image-base.inc
 +++ b/recipes-core/images/upboard-image-base.inc
-@@ -1,12 +1,12 @@
+@@ -1,18 +1,18 @@
 -IMAGE_FEATURES += "package-management"
 +IMAGE_FEATURES += "package-management debug-tweaks "
  
  IMAGE_INSTALL += "kernel-modules"
  IMAGE_INSTALL += "dmidecode"
 -IMAGE_INSTALL += "python"
-+#IMAGE_INSTALL += "python"
  IMAGE_INSTALL += "python3"
  IMAGE_INSTALL += "python3-pip"
  IMAGE_INSTALL += "alsa-lib alsa-utils alsa-tools"
@@ -18,11 +17,11 @@ index 8343080..eecb5ca 100644
  IMAGE_INSTALL += "i2c-tools git vim"
  IMAGE_INSTALL += "file"
  IMAGE_INSTALL += "dosfstools"
-@@ -14,5 +14,6 @@ IMAGE_INSTALL += "picocom"
+ IMAGE_INSTALL += "picocom"
  IMAGE_INSTALL += "connman connman-client"
++IMAGE_INSTALL += "packagegroup-security-tpm2 acpica"
  
  DISTRO_FEATURES_append = " bluez5 bluetooth wifi"
 -IMAGE_INSTALL_append += " bluez5 systemd"
-+#IMAGE_INSTALL_append += " bluez5 systemd"
 +IMAGE_INSTALL_append += " bluez5"
  IMAGE_INSTALL_append += " hostapd dhcp-client iw wpa-supplicant"

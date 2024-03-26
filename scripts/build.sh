@@ -54,6 +54,7 @@ echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-openembedded/meta-networking \"" 
 echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-openembedded/meta-filesystems \"" >> ${CONF_FILE_BBLAYERS}
 echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-openembedded/meta-oe \"" >> ${CONF_FILE_BBLAYERS}
 echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-virtualization \"" >> ${CONF_FILE_BBLAYERS}
+echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-security/meta-tpm \"" >> ${CONF_FILE_BBLAYERS}
 echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-intel \"" >> ${CONF_FILE_BBLAYERS}
 echo "BBLAYERS += \"\${TOPDIR}/../sources/meta-up-board \"" >> ${CONF_FILE_BBLAYERS}
 
